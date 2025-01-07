@@ -1,0 +1,3 @@
+# Tcl Proc Return Value Misinterpretation
+
+This repository demonstrates a common, yet subtle, error in Tcl: misinterpreting the return value of a procedure.  The `badproc` procedure correctly prints its argument but incorrectly returns a numerical value, causing the `puts` statement to attempt to execute '1' as a command.  The solution shows how to correctly use the return value to prevent this error.
